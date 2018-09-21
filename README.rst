@@ -5,7 +5,7 @@ Variational Autoencoder (VAE)
 .. image:: https://readthedocs.org/projects/vae/badge/?version=latest
     :target: http://vae.readthedocs.io
 
- .. image:: https://img.shields.io/badge/License-MIT-blue.svg
+.. image:: https://img.shields.io/badge/License-MIT-blue.svg
     :target: ./LICENSE
 
 .. sphinx-start
