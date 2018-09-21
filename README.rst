@@ -2,7 +2,10 @@
 Variational Autoencoder (VAE)
 =============================
 
-.. image:: https://img.shields.io/badge/License-MIT-blue.svg
+.. image:: https://readthedocs.org/projects/vae/badge/?version=latest
+    :target: http://vae.readthedocs.io
+
+ .. image:: https://img.shields.io/badge/License-MIT-blue.svg
     :target: ./LICENSE
 
 .. sphinx-start
@@ -78,7 +81,7 @@ One can also monitor training using TensorBoard:
 
 We can then restore the trained model and use it to evaluate samples:
 
-.. code-block:: sh
+.. code-block:: python
 
     with open('vae/model.pkl', 'wb') as f:
         model = dill.load(f)
