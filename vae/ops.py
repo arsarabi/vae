@@ -1,4 +1,4 @@
-""""TensorFlow operations"""
+"""TensorFlow operations"""
 
 __all__ = [
     'gaussian_log_likelihood',

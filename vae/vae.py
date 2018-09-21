@@ -9,7 +9,7 @@ VISIBLE_TYPES = ['binary', 'real']
 
 
 class VAE(UnsupervisedModel):
-    """Variational Autoencoder model
+    """`Variational Autoencoder <https://arxiv.org/abs/1312.6114>`_
 
     Parameters
     ----------
@@ -24,13 +24,17 @@ class VAE(UnsupervisedModel):
     visible_type : str, optional (default='binary'):
         Type of the visible variables. Can be 'binary' or 'real'.
     dropout_rate : float or None, optional (default=None)
-        Dropout rate, if any, to apply to the input.
+        `Dropout <https://arxiv.org/abs/1207.0580>`_ rate, if any, to
+        apply to the input.
     nonlinearity : optional (default=tf.nn.relu)
         Nonlinearity to use for hidden units.
     weight_normalization : bool, optional (default=False)
-        Whether to use weight normalization.
+        Whether to use
+        `weight normalization <https://arxiv.org/abs/1602.07868>`_.
     importance_weighting : bool, optional (default=False)
-        Whether to use importance weighting for training the model.
+        Whether to use
+        `importance weighting <https://arxiv.org/abs/1509.00519>`_ for
+        training the model.
     min_divergence : float, optional (default=0.0)
         Minimum KL divergence per latent dimension. Default=0.0.
     optimizer : str, optional (default='Adam')

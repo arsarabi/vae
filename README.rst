@@ -14,8 +14,9 @@ Overview
 ========
 
 This package contains an implementation of a `variational autoencoder`_ in
-TensorFlow, with optional `importance weighting`_, and `weight normalization`_.
-Trained model can be saved and then restored for evaluation.
+TensorFlow, with optional `importance weighting`_, `weight normalization`_, and
+`dropout`_ applied to the input layer. Trained models can be saved and then
+restored for evaluation.
 
 Installation
 ============
