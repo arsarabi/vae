@@ -84,14 +84,15 @@ We can then restore the trained model and use it to evaluate samples:
 
 .. code-block:: python
 
-    with open('vae/model.pkl', 'wb') as f:
+    with open('vae/model.pkl', 'rb') as f:
         model = dill.load(f)
 
-    Z_mean, Z_sd = model.evaluate(X, ['z_mean', 'z_sd'], n_samples=1)
+    Z_mean, Z_sd = model.evaluate(data, tensors=['z_mean', 'z_sd'])
 
-See the documentation for the full list of variables that can be evaluated.
+See the `API documentation`_ for more detailed usage.
 
 .. _Variational Autoencoder: https://arxiv.org/abs/1312.6114
 .. _Importance Weighting: https://arxiv.org/abs/1509.00519
 .. _Weight Normalization: https://arxiv.org/abs/1602.07868
 .. _Dropout: https://arxiv.org/abs/1207.0580
+.. _API Documentation: https://vae.readthedocs.io/en/latest/modules.html
